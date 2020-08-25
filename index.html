@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #cvs {
+        border: 1px solid #777;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="cvs"></canvas>
+    <h1>Money Distribution Simulation</h1>
+    <div>
+      <a href="http://www.decisionsciencenews.com/2017/06/19/counterintuitive-problem-everyone-room-keeps-giving-dollars-random-others-youll-never-guess-happens-next/">REFERENCE</a>
+    </div>
+  </body>
+  <script type="module">
+    import {Visualizer} from "./Visualizer.js";
+    window.onload = function() {
+      const visualizer = new Visualizer(960, 720);
+    }
+  </script>
+</html>
